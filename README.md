@@ -9,13 +9,13 @@
 
 Answer the following in this file:
 
-* How many unique users are in the data?
-* How many salts did you create?
+* How many unique users are in the data? 42 unique users.
+* How many salts did you create? 42 salts.
 * How many possible combinations will I need to try to figure out the secret ID
   of all students (assume I know all potential secret IDs and have your 
-  `salted-data.csv`)
+  `salted-data.csv`) 1048576 possible combinations.
 * Instead of salts, if you were to use a nonce (unique number for each hashed
-  field) how many possible combinations would I need to try?
+  field) how many possible combinations would I need to try? 1365245952 possible combinations.
 * Given the above, if this quiz data were *actual* class data, say for example
   your final exam, how would you store this dataset?  Why?
 
