@@ -17,7 +17,7 @@ Answer the following in this file:
 * Instead of salts, if you were to use a nonce (unique number for each hashed
   field) how many possible combinations would I need to try? 1365245952 possible combinations.
 * Given the above, if this quiz data were *actual* class data, say for example
-  your final exam, how would you store this dataset?  Why?
+  your final exam, how would you store this dataset?  Why? I would probably use nonces instead of salts to store this dataset, as nonces are much more secure.
 
 ```bash
 please put any cool bash one-liners or other piped commands you
@@ -37,15 +37,15 @@ Answer the following:
 hash)
 
 ```
-
+00004d48581c3239ed48a23b17fbab538d6d9ebd72ec16059156708759f323e7 - 5996these
 ```
 
-* How many words were in your dictionary?
-* How many nonces did your code iterate over?
-* What was the maximum number of hashes your code *could* compute given the above?
-* What did you think about Task 2?
-* Is there a better way than brute force to attempt to get higher valued coins?
-* Why or why not?
+* How many words were in your dictionary? 14
+* How many nonces did your code iterate over? 10000000000
+* What was the maximum number of hashes your code *could* compute given the above? 140000000000
+* What did you think about Task 2? Challenging, but interesting.
+* Is there a better way than brute force to attempt to get higher valued coins? No.
+* Why or why not? It's not possible to know what a hash will be before it's been hashed, and by extension, not possible to know how many leading zeroes it will have.
 
 
 ```bash

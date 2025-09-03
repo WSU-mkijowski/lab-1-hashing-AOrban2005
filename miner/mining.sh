@@ -28,9 +28,5 @@ while IFS= read -r word || [[ -n "$word" ]]; do
 
     ((nonce++))
 
-    # Optional: Add a limit to nonce to prevent infinite loops for a single word
-    # if [ "$nonce" -gt 100000 ]; then
-    #   break
-    # fi
   done
-done < "$DICTIONARY_FILE"
+done"
