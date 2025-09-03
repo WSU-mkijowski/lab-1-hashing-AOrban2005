@@ -12,17 +12,15 @@ echo "Searching for SHA256 hash with four leading zeros..."
 while IFS= read -r word || [[ -n "$word" ]]; do
   nonce=0
   while true; do
-    # Concatenate the word and the nonce
-    input_string="${word}${nonce}"
+    input_string="${nonce}${word}"
 
-    # Calculate the SHA256 hash
     hash=$(echo -n "$input_string" | sha256sum | awk '{print $1}')
 
     # Check if the hash starts with the required leading zeros
     if [[ "$hash" == "${LEADING_ZEROS}"* ]]; then
       echo "Found!"
-      echo "Word: $word"
       echo "Nonce: $nonce"
+      echo "Word: $word"
       echo "Input String: $input_string"
       echo "SHA256 Hash: $hash"
       exit 0 
