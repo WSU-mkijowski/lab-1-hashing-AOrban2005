@@ -66,7 +66,7 @@ hash)
 
 * What did you think about Task 2? 
 
-Challenging, but interesting.
+It was challenging, but interesting.
 
 * Is there a better way than brute force to attempt to get higher valued coins? 
 
